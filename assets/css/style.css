@@ -378,27 +378,6 @@ aside{
     padding: 20px;
 }
 
-/* specific formatting for icons
-
-    
-/* "content: url" Doesn't work with Edge - too bad because it's much easier to add this to img
-     than what I ended up doing to make the icons change on hover =( I may revisit.
-    content:  url("../images/linkedin-logo.png");
-
-}
-
-.icon-img::before{
-    content: url("../images/linkedin-logo.png")
-}
-.icon-img:link
-.icon-img:visited{
-    text-decoration: none;
-    color: transparent;
-}
-.icon-img:hover{
-    content: url("../images/linkedin-spelled-out.png");
-}
-*/
 
 /* icon formatting */
 .icon-container{
@@ -540,44 +519,57 @@ img{
 
     .header-content-container {
         width: 85%;
-        margin: auto;
     }
     .link-container {
-        width: 11%
+        width: 11%;
     }
     section{
         width: 85%; 
-        margin: auto;
     }
-
     article{
         width: 62%; 
         box-sizing: border-box; 
     }
-
     aside {
         width: 33%; 
         box-sizing: border-box;
+    }
+
+    #about{
+        right: 200%;
+    }
+    #portfolio{
+        right: 100%;
+    }
+    #contact{
+        right: 0;
+    }
+
+    #about-active{
+        right: 200%; 
+    }
+    #portfolio-active{
+        right: 100%; 
+    }
+    #contact-active{
+        right: 0; 
     }
     
 
 @media screen and (max-width: 768px){
     .link-container {
-        width: 11%
+        width: 11%;
     }
     section{
         width: 85%; 
-        margin: auto;
     }
     .header-content-container {
         width: 85%;
-        margin: auto;
     } 
     article{
         width: 100%; 
         box-sizing: border-box;
     }
-
     aside {
         width: 100%; 
         float: left; 
@@ -585,97 +577,27 @@ img{
         box-sizing: border-box;
     }
 
-     /* "About" link block */
      #about{
         right: 200%;
-        box-sizing: border-box
     }
-    
-    /* "Portfolio" link block */
     #portfolio{
         right: 100%;
-        box-sizing: border-box
     }
-    
-    /* "Contact" link block */
     #contact{
         right: 0;
-        box-sizing: border-box
     }
 
     #about-active{
         right: 200%; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
     }
-    
     #portfolio-active{
         right: 100%; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
     }
-    
     #contact-active{
         right: 0; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
     }
 }
 
-     /* "About" link block */
-    #about{
-        right: 200%;
-        box-sizing: border-box
-    }
-    
-    /* "Portfolio" link block */
-    #portfolio{
-        right: 100%;
-        box-sizing: border-box
-    }
-    
-    /* "Contact" link block */
-    #contact{
-        right: 0;
-        box-sizing: border-box
-    }
-
-    #about-active{
-        right: 200%; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
-    }
-    
-    #portfolio-active{
-        right: 100%; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
-    }
-    
-    #contact-active{
-        right: 0; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
-    }
-}
 
 @media screen and (max-width: 640px){
     header{
@@ -683,7 +605,6 @@ img{
     }
     .header-content-container {
         width: 100%;
-        margin: auto;
     }
     .header-name-styling {
         width: 100%; 
@@ -694,67 +615,40 @@ img{
     }
     nav{
         float: left; 
-        height: 40%}
+        height: 40%;
+    }
     .link-container{
-        width: 33%;  
+        width: 33.33%;  
         margin: auto; 
         box-sizing: border-box;
     }
     .link-spanner{
-        line-height: 300%
+        line-height: 300%;
     }
     #about{
         left: 0;
-        box-sizing: border-box
     }
-    
-    /* "Portfolio" link block */
     #portfolio{
         left: 100%;
-        box-sizing: border-box
     }
-    
-    /* "Contact" link block */
     #contact{
         left: 200%;
-        box-sizing: border-box
     }
 
     #about-active{
         left: 0; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
     }
-    
     #portfolio-active{
         left: 100%; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
     }
-    
     #contact-active{
         left: 200%; 
-        border-right-style: solid;
-        border-left-style: solid;
-        border-width: 0 thin;
-        border-color: #cccccc;
-        box-sizing: border-box
     }
-
     #profile-img{
         float: none;
         margin: auto; 
     }
-    
 }
-
-
 
 
 /*end all
